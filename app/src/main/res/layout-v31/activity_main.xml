@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+    </androidx.cardview.widget.CardView>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cV_topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/iV_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/search_fill1_blue"></ImageView>
+
+        <ImageView
+            android:id="@+id/iV_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/navigate_before_blue"></ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+<LinearLayout
+android:id="@+id/linearLayout2"
+android:layout_height="wrap_content"
+android:layout_margin="56dp"
+android:layout_marginBottom="96dp"
+android:layout_width="wrap_content"
+android:orientation="vertical"
+app:layout_constraintBottom_toTopOf="@+id/cV_BottomTollbar"
+app:layout_constraintStart_toStartOf="parent">
+
+<ImageView
+    android:id="@+id/imageView16"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:srcCompat="@drawable/img_cameras" />
+
+<ImageView
+    android:id="@+id/imageView17"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:srcCompat="@drawable/img_ptz" />
+
+<ImageView
+    android:id="@+id/imageView18"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:srcCompat="@drawable/img_qr_code" />
+
+<ImageView
+    android:id="@+id/imageView19"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:srcCompat="@drawable/img_video_wiki" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_height="wrap_content"
+android:layout_marginStart="40dp"
+android:layout_width="wrap_content"
+android:orientation="vertical"
+app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+<ImageView
+    android:id="@+id/imageView20"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:srcCompat="@drawable/img_lenses" />
+
+<ImageView
+    android:id="@+id/imageView21"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:srcCompat="@drawable/img_uav" />
+
+<ImageView
+    android:id="@+id/imageView22"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:srcCompat="@drawable/img_notes" />
+</LinearLayout>
+
+<androidx.cardview.widget.CardView
+android:id="@+id/cV_BottomTollbar"
+android:layout_height="56dp"
+android:layout_width="match_parent"
+
+app:layout_constraintBottom_toBottomOf="parent"
+tools:ignore="MissingConstraints"
+tools:layout_editor_absoluteX="0dp">
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_width="40dp"
+        app:srcCompat="@drawable/home_fill0_blue" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_width="40dp"
+        app:srcCompat="@drawable/photo_camera_fill1_blue" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_width="40dp"
+        app:srcCompat="@drawable/favorite_fill0_blue" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_width="40dp"
+        app:srcCompat="@drawable/share_fill0_blue" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_width="40dp"
+        app:srcCompat="@drawable/settings_fill0_blue" />
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+android:backgroundTint="@android:color/darker_gray"
+android:id="@+id/cV_ScreenName_bg"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:layout_width="match_parent"
+app:layout_constraintTop_toBottomOf="@+id/cV_topToolbar"
+tools:layout_editor_absoluteX="0dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/tV_ScreenName1"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_width="wrap_content"
+        android:text="MenuPicker"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/tV_ScreenName2"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="155dp"
+        android:layout_marginStart="24sp"
+        android:layout_width="wrap_content"
+        android:text="Home"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tV_ScreenName1"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
